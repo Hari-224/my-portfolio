@@ -1,38 +1,170 @@
+/* ===== GLOBAL STYLES & RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* ===== ROOT APP WRAPPER ===== */
 .App {
-  text-align: center;
+  position: relative;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+  z-index: -1;
+  animation: backgroundFloat 20s ease-in-out infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes backgroundFloat {
+  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+  33% { transform: translate(30px, -30px) rotate(1deg); }
+  66% { transform: translate(-20px, 20px) rotate(-1deg); }
 }
 
-.App-header {
-  background-color: #282c34;
+/* ===== HERO SECTION ===== */
+.hero-section {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  background-size: 400% 400%;
+  animation: heroGradient 15s ease infinite;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: floatingDots 20s linear infinite;
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatingDots {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(-50px, -50px) rotate(360deg); }
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 900;
   color: white;
+  text-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+  animation: heroTitleEntrance 1.2s ease-out both;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+  opacity: 0.95;
+  animation: heroSubtitleEntrance 1.5s ease-out 0.3s both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes heroTitleEntrance {
+  from { opacity: 0; transform: translateY(50px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0px) scale(1); }
+}
+
+@keyframes heroSubtitleEntrance {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 0.95; transform: translateY(0px); }
+}
+
+/* ===== HERO BUTTONS ===== */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: buttonsEntrance 1.8s ease-out 0.6s both;
+}
+
+.hero-buttons button {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.hero-buttons button:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.hero-buttons button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
+}
+
+.hero-buttons button:hover::before {
+  left: 100%;
+}
+
+@keyframes buttonsEntrance {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+/* ===== SECTION DEFAULT ===== */
+section {
+  margin: 2rem 0;
+  opacity: 1; /* fixed: visible by default */
+  transform: translateY(0);
 }

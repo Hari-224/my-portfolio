@@ -1,0 +1,27 @@
+.experience-section { background: #f9fafb; padding: 5rem 0; }
+.experience-header { text-align: center; margin-bottom: 3rem; }
+.experience-counters { display: grid; grid-template-columns: repeat(3,1fr); gap:2rem; margin-bottom: 2.2rem; text-align:center; }
+.counter { font-size:2.1rem; font-weight:bold; margin-bottom:7px; display:block;}
+.counter.blue { color: #2563eb; }
+.counter.green { color: #059669;}
+.counter.purple { color: #7c3aed;}
+.experience-tabs { text-align:center; margin-bottom:2.2rem;}
+.experience-tabs button { padding: 11px 26px; border-radius:9999px; border:none; margin:0 8px; font-weight:600; font-size:1rem;}
+.experience-tabs .active { background: #3b82f6; color: white; box-shadow:0 2px 9px rgba(50,90,250,0.09);}
+.experience-timeline { position: relative;}
+.timeline-row { display: flex; margin-bottom:3rem;}
+.timeline-row.reverse { flex-direction: row-reverse;}
+.timeline-card { width: 50%; padding:2rem; background:white; border-radius:1.5rem; box-shadow: 0 2px 8px rgba(70,70,70,.14);}
+.timeline-year { color: #3b82f6; font-weight:bold; font-size:1.2rem; margin-bottom:7px;}
+.timeline-title { font-size: 1.2rem; font-weight:bold; color:#1f2937;}
+.timeline-company { color: #3b82f6; font-weight:500; margin-bottom:9px;}
+.timeline-desc { color:#3b3b6d; margin-bottom:14px;}
+.timeline-card ul { margin:0; padding-left:0; list-style:none;}
+.timeline-card li { font-size:.96rem; color:#727275; margin-bottom:6px; display:flex; align-items:center; gap:7px;}
+.star { color: #eab308;}
+.experience-badges { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:2rem; }
+.badge-card { background: white; border-radius:1.5rem; padding:2rem; box-shadow:0 2px 9px rgba(50,90,250,0.09);}
+.badge-header { display:flex; align-items:center; gap:1.4rem; margin-bottom:16px;}
+.badge-icon { font-size:2.5rem;}
+.badge-progress-bar { background:#e5e7eb; border-radius:9999px; height:8px; width:100%; }
+.badge-progress { background: linear-gradient(90deg,#3b82f6,#8b5cf6); height:8px; border-radius:9999px; transition: width 1s;}

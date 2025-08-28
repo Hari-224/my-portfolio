@@ -1,0 +1,105 @@
+.solver-toggle {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background: linear-gradient(90deg,#8b5cf6,#ec4899);
+  color: white;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  padding: 15px 30px;
+  box-shadow: 0 8px 24px rgba(250,80,150,0.14);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  z-index: 50;
+}
+.solver-modal {
+  position: fixed;
+  inset: 3rem;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(41,41,100,0.13);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.solver-header {
+  background: linear-gradient(90deg,#8b5cf6,#ec4899);
+  color: white;
+  padding: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.solver-body {
+  flex: 1;
+  padding: 2rem;
+}
+.solver-body label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.solver-body select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.8rem;
+  background: #f3f4f6;
+  margin-bottom: 1.4rem;
+}
+.solver-visual {
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1.1rem;
+  min-height: 80px;
+}
+.solver-bar {
+  width: 30px;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4px;
+  transition: background .2s;
+}
+.solver-bar.active {
+  background: #ef4444;
+}
+.solver-body button {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.solver-body button:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+.solver-info {
+  background: #f3f4f6;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 0.85rem;
+  color: #374151;
+  font-size: 1.11rem;
+}
