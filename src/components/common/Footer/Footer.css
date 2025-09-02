@@ -1,0 +1,52 @@
+.footer {
+  background: var(--section-bg, #0f172a); /* Same as your other sections */
+  color: #e2e8f0;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  color: #e2e8f0;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #38bdf8; /* Subtle professional hover */
+}
+
+.footer-bottom {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-text {
+  margin-bottom: 0.3rem;
+}
+
+.footer-credit {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.footer-credit .highlight {
+  color: #38bdf8;
+  font-weight: 500;
+}

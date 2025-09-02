@@ -1,0 +1,126 @@
+/* components/sections/About/About.css */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-content {
+  font-size: var(--font-lg);
+  line-height: var(--line-height-loose);
+  margin-top: var(--spacing-lg); /* pushes content slightly down */
+}
+
+
+.about-paragraph {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.highlight {
+  color: var(--primary-purple);
+  font-weight: 600;
+}
+
+.highlight-blue {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.highlight-green {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.highlight-yellow {
+  color: var(--primary-yellow);
+  font-weight: 600;
+}
+
+.about-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xl);
+  flex-wrap: wrap;
+  justify-content: center; /* Center the buttons */
+}
+
+
+.achievements-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.achievements-title {
+  font-size: var(--font-xl);
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.achievement-card {
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  color: var(--primary-purple);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement-title {
+  font-size: var(--font-lg);
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.achievement-description {
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+  line-height: var(--line-height-normal);
+}
+/* Disable hover effects for buttons */
+/* Disable hover effects for buttons */
+.no-hover:hover,
+.no-hover:focus,
+.no-hover:active {
+  transform: none !important;
+  box-shadow: none !important;
+  background-color: inherit !important; /* keeps original color */
+  color: inherit !important;
+  cursor: pointer; /* still shows clickable cursor */
+}
+
+
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+}

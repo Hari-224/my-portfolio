@@ -1,0 +1,43 @@
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+}
+
+.floating-orb--1 {
+  width: 120px;
+  height: 120px;
+  background: #8b5cf6;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-orb--2 {
+  width: 200px;
+  height: 200px;
+  background: #ec4899;
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.floating-orb--3 {
+  width: 100px;
+  height: 100px;
+  background: #22d3ee;
+  top: 70%;
+  left: 40%;
+  animation-delay: 4s;
+}

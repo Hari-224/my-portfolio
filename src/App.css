@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth; /* ensures smooth scroll for anchor/ref jumps */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* fallback dark bg */
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar space fix */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Sections */
+section {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+/* Headings inside sections */
+section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f1f5f9;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive typography */
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 2.2rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  section h1 {
+    font-size: 1.8rem;
   }
 }

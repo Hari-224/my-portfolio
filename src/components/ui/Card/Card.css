@@ -1,0 +1,12 @@
+/* components/ui/Card/Card.css */
+.card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border: var(--border-glass);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  background: var(--bg-glass-hover);
+}
