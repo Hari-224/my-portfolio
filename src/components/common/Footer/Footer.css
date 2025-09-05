@@ -1,14 +1,24 @@
 .footer {
-  background: var(--section-bg, #0f172a); /* Same as your other sections */
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
   color: #e2e8f0;
   text-align: center;
   padding: 2.5rem 1rem;
   margin-top: 3rem;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .footer-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   margin-bottom: 1.5rem;
   width: 80%;
   margin-left: auto;
@@ -20,16 +30,40 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-icon {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #e2e8f0;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer-icon:hover {
-  color: #38bdf8; /* Subtle professional hover */
+  color: #38bdf8;
+  transform: scale(1.2) rotate(5deg);
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.footer-cta {
+  margin: 1rem 0 2rem;
+}
+
+.footer-hire-btn {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-hire-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(14, 165, 233, 0.5);
 }
 
 .footer-bottom {
@@ -49,4 +83,13 @@
 .footer-credit .highlight {
   color: #38bdf8;
   font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .footer-socials {
+    gap: 1.2rem;
+  }
+  .footer-icon {
+    font-size: 2rem;
+  }
 }

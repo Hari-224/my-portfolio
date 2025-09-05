@@ -9,11 +9,11 @@
   }
   
   .section {
-    padding: 4rem 2rem;
+    padding: 3rem 1.5rem; /* 🔥 reduced from 4rem 2rem */
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none !important;
@@ -34,7 +34,7 @@
   }
 
   .section {
-    padding: 4rem 1rem;
+    padding: 2.5rem 1rem; /* 🔥 reduced from 4rem 1rem */
   }
 
   .projects-grid {
@@ -82,6 +82,10 @@
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .section {
+    padding: 3.5rem 2rem; /* 🔥 slightly reduced for desktops */
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -92,6 +96,10 @@
   
   .hero-title {
     font-size: 6rem;
+  }
+
+  .section {
+    padding: 3.5rem 2rem; /* 🔥 consistent spacing */
   }
 }
 
@@ -106,7 +114,7 @@
   }
   
   .section {
-    padding: 2rem 0;
+    padding: 1.5rem 0; /* 🔥 reduced for print */
     page-break-inside: avoid;
   }
 }

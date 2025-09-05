@@ -20,6 +20,7 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen }) => {
   return (
     <nav className="navbar">
       <div className="nav-content">
+        {/* Logo */}
         <div 
           className="logo"
           onClick={() => scrollToSection('hero')}
@@ -27,7 +28,34 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen }) => {
           Hariprasath A
         </div>
         
+        {/* Desktop Navigation */}
         <ul className="nav-links desktop-nav">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <button
+                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                onClick={() => handleNavClick(item.id)}
+              >
+                {item.label}
+                <span className="underline"></span>
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile Toggle */}
+        <button 
+          className="mobile-menu-button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle mobile menu"
+        >
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <ul className="mobile-nav">
           {navItems.map((item) => (
             <li key={item.id}>
               <button
@@ -39,15 +67,7 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen }) => {
             </li>
           ))}
         </ul>
-
-        <button 
-          className="mobile-menu-button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle mobile menu"
-        >
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </div>
+      )}
     </nav>
   );
 };

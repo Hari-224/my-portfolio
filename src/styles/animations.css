@@ -1,5 +1,3 @@
-/* styles/animations.css */
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -87,63 +85,20 @@
 }
 
 /* Utility animation classes */
-.fade-in-up {
-  animation: fadeInUp 1s ease-out;
-}
-
-.float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.float-reverse {
-  animation: float 8s ease-in-out infinite reverse;
-}
-
-.float-slow {
-  animation: float 10s ease-in-out infinite;
-}
-
-.pulse {
-  animation: pulse 2s infinite;
-}
-
-.slide-in-right {
-  animation: slideInRight 0.6s ease-out;
-}
-
-.slide-in-left {
-  animation: slideInLeft 0.6s ease-out;
-}
-
-.scale-in {
-  animation: scaleIn 0.4s ease-out;
-}
-
-.glow {
-  animation: glow 2s ease-in-out infinite;
-}
+.fade-in-up { animation: fadeInUp 1s ease-out; }
+.float { animation: float 6s ease-in-out infinite; }
+.float-reverse { animation: float 8s ease-in-out infinite reverse; }
+.float-slow { animation: float 10s ease-in-out infinite; }
+.pulse { animation: pulse 2s infinite; }
+.slide-in-right { animation: slideInRight 0.6s ease-out; }
+.slide-in-left { animation: slideInLeft 0.6s ease-out; }
+.scale-in { animation: scaleIn 0.4s ease-out; }
+.glow { animation: glow 2s ease-in-out infinite; }
 
 /* Hover animations */
-.hover-lift {
-  transition: transform var(--transition-normal);
-}
-
-.hover-lift:hover {
-  transform: translateY(-5px);
-}
-
-.hover-scale {
-  transition: transform var(--transition-normal);
-}
-
-.hover-scale:hover {
-  transform: scale(1.05);
-}
-
-.hover-rotate {
-  transition: transform var(--transition-normal);
-}
-
-.hover-rotate:hover {
-  transform: rotate(5deg);
-}
+.hover-lift { transition: transform var(--transition-normal); }
+.hover-lift:hover { transform: translateY(-5px); }
+.hover-scale { transition: transform var(--transition-normal); }
+.hover-scale:hover { transform: scale(1.05); }
+.hover-rotate { transition: transform var(--transition-normal); }
+.hover-rotate:hover { transform: rotate(5deg); }
