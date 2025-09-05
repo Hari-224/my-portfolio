@@ -81,11 +81,11 @@
 // export default ProjectCard;
 
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+// import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Card from '../../ui/Card';
 
 const ProjectCard = ({ project }) => {
-  const { title, description, category, tech, features, impact, github, demo } = project;
+  const { title, description, category, tech, features, impact} = project;
 
   return (
     <Card className="project-card hover-lift">

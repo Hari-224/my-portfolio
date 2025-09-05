@@ -1,5 +1,5 @@
 // src/data/achievements.js
-import { FaAward, FaGraduationCap, FaRocket, FaBrain, FaUsers } from 'react-icons/fa';
+import { FaAward, FaRocket, FaBrain } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 
 export const achievements = [

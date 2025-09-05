@@ -1,7 +1,7 @@
 
 // data/skills.js
-import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaPython, FaCode, FaMobile, FaServer, FaCloud } from 'react-icons/fa';
-import { SiFlutter, SiSpringboot, SiMysql, SiAwsamplify, SiJavascript, SiTypescript, SiDocker, SiKubernetes } from 'react-icons/si';
+import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaCode, FaMobile, FaServer, FaCloud } from 'react-icons/fa';
+import { SiFlutter, SiSpringboot, SiMysql, SiAwsamplify, SiJavascript } from 'react-icons/si';
 
 export const skillCategories = [
   {

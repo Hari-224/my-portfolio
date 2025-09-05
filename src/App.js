@@ -1414,18 +1414,18 @@ import Contact from './components/sections/Contact';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import ProgressBar from './components/common/ProgressBar';
-import CustomCursor from './components/common/CustomCursor';
+// import CustomCursor from './components/common/CustomCursor';
 import AnimatedBackground from './components/layout/AnimatedBackground';
 import MobileMenu from './components/layout/MobileMenu';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import { useActiveSection } from './hooks/useActiveSection';
-import { useMousePosition } from './hooks/useMousePosition';
+// import { useMousePosition } from './hooks/useMousePosition';
 import './App.css';
 
 const App = () => {
   const scrollProgress = useScrollProgress();
   const { activeSection, isMenuOpen, setIsMenuOpen } = useActiveSection();
-  const mousePosition = useMousePosition();
+  // const mousePosition = useMousePosition();
 
   return (
     <div className="portfolio-container">

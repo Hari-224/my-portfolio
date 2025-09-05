@@ -4,7 +4,7 @@ import { SiLeetcode } from 'react-icons/si';
 import Typewriter from 'typewriter-effect';
 import Button from '../../ui/Button';
 import { scrollToSection } from '../../../utils/scrollToSection';
-import { SOCIAL_LINKS } from '../../../data/constants';
+// import { SOCIAL_LINKS } from '../../../data/constants';
 import './Hero.css';
 
 const Hero = () => {
