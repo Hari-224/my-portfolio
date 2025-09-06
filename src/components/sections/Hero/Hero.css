@@ -1,12 +1,8 @@
-/* =======================
-   Hero Section
-======================= */
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 4rem 1.5rem;
+  padding: 120px 40px 0px 40px;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -18,11 +14,8 @@
   animation: fadeInUp 1s ease-out;
 }
 
-/* =======================
-   Typewriter Title
-======================= */
 .hero-typewriter {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 400;
   background: linear-gradient(135deg, #a1a1ff 0%, #c4b5fd 100%);
   -webkit-background-clip: text;
@@ -31,9 +24,6 @@
   white-space: nowrap;
 }
 
-/* =======================
-   Hero Title
-======================= */
 .hero-title {
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 800;
@@ -41,23 +31,17 @@
   margin-bottom: 0.5rem;
 }
 
-/* =======================
-   Subtitle
-======================= */
 .hero-subtitle {
   font-size: 1.4rem;
   color: #cbd5e1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* =======================
-   Stats Section
-======================= */
 .hero-stats {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -66,17 +50,17 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  font-size: 1rem;                /* ✅ fixed font size */
+  font-size: 1rem;
   line-height: 1.4;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.05);
-  padding: 0.6rem 1.2rem;         /* ✅ fixed padding */
+  padding: 0.6rem 1rem;
   border-radius: 1rem;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, background 0.3s ease;
   white-space: nowrap;
-  flex: 0 0 auto;                 /* ✅ prevents resizing */
-  min-width: max-content;         /* ✅ keeps background stable */
+  flex: 0 0 auto;
+  min-width: max-content;
 }
 
 .stat-item svg {
@@ -89,14 +73,11 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* =======================
-   Buttons
-======================= */
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -106,7 +87,7 @@
   font-weight: bold;
   font-size: 1rem;
   border-radius: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -115,12 +96,12 @@
   background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
   color: #ffffff;
   border: none;
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 6px 24px rgba(139, 92, 246, 0.3);
 }
 
 .primary-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 10px 32px rgba(139, 92, 246, 0.4);
 }
 
 .secondary-button {
@@ -135,7 +116,6 @@
   transform: translateY(-2px);
 }
 
-/* Disable hover effect for .no-hover */
 .no-hover:hover,
 .no-hover:active,
 .no-hover:focus {
@@ -146,14 +126,11 @@
   cursor: pointer;
 }
 
-/* =======================
-   Social Links
-======================= */
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
-  font-size: 1.8rem;
+  gap: 1rem;
+  font-size: 1.6rem;
 }
 
 .social-link {
@@ -165,40 +142,80 @@
   color: var(--hover-color, #8b5cf6);
   transform: scale(1.2) rotate(10deg);
 }
-
-/* =======================
-   Responsive Adjustments
-======================= */
-/* =======================  */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 50px 30px 50px 30px;
+  }
   .hero-title {
-    font-size: 2rem; /* reduce base h1 size */
+    font-size: clamp(2.5rem, 5vw, 4rem);
   }
-
   .hero-typewriter {
-    font-size: 1.2rem !important; /* ✅ smaller typewriter text */
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
   }
+}
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px 40px 20px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-typewriter {
+    font-size: 1.8rem !important;
+  }
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
-
   .hero-buttons {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
+    margin: 0px 60px 20px 60px;
   }
-
   .hero-stats {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
+    margin: 0px 60px 20px 60px;
   }
-
   .stat-item {
     font-size: 1rem;
-    min-width: unset;
   }
-
   .social-links {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    gap: 0.8rem;
+    margin: 0px 60px 20px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 130px 15px 0px 15px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-typewriter {
+    font-size: 1.5rem !important;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  .hero-buttons {
+    gap: 0.5rem;
+    margin: 0px 60px 20px 60px;
+  }
+  .hero-stats {
+    gap: 0.5rem;
+    margin: 0px 60px 20px 60px;
+  }
+  .stat-item {
+    font-size: 1rem;
+  }
+  .social-links {
+    font-size: 1rem;
+    gap: 0.6rem;
+    margin: 0px 60px 20px 60px;
   }
 }

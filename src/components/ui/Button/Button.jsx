@@ -1,3 +1,4 @@
+// components/ui/Button/Button.jsx
 import React from 'react';
 import './Button.css';
 
@@ -28,19 +29,11 @@ const Button = ({
       {...props}
     >
       {icon && iconPosition === 'left' && (
-        <span className="button__icon button__icon--left">
-          {icon}
-        </span>
+        <span className="button__icon button__icon--left">{icon}</span>
       )}
-      
-      <span className="button__text">
-        {children}
-      </span>
-      
+      <span className="button__text">{children}</span>
       {icon && iconPosition === 'right' && (
-        <span className="button__icon button__icon--right">
-          {icon}
-        </span>
+        <span className="button__icon button__icon--right">{icon}</span>
       )}
     </button>
   );

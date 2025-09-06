@@ -1,90 +1,41 @@
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 @keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
-  }
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-/* Utility animation classes */
 .fade-in-up { animation: fadeInUp 1s ease-out; }
 .float { animation: float 6s ease-in-out infinite; }
 .float-reverse { animation: float 8s ease-in-out infinite reverse; }
@@ -95,10 +46,29 @@
 .scale-in { animation: scaleIn 0.4s ease-out; }
 .glow { animation: glow 2s ease-in-out infinite; }
 
-/* Hover animations */
 .hover-lift { transition: transform var(--transition-normal); }
 .hover-lift:hover { transform: translateY(-5px); }
 .hover-scale { transition: transform var(--transition-normal); }
 .hover-scale:hover { transform: scale(1.05); }
 .hover-rotate { transition: transform var(--transition-normal); }
 .hover-rotate:hover { transform: rotate(5deg); }
+
+.section {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .section { padding: 2.25rem 1.25rem; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 1.75rem 1rem; }
+}
+
+@media (min-width: 992px) {
+  .section { padding: 2.5rem 1.5rem; }
+}
+
+@media (min-width: 1200px) {
+  .section { padding: 2.75rem 2rem; }
+}

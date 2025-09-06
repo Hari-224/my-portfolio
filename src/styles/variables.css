@@ -1,50 +1,42 @@
 /* styles/variables.css */
 :root {
-  /* Colors */
   --primary-purple: #8b5cf6;
   --primary-pink: #ec4899;
   --primary-blue: #3b82f6;
   --primary-green: #10b981;
   --primary-yellow: #f59e0b;
   --primary-red: #ef4444;
-  
-  /* Text Colors */
+
   --text-primary: #ffffff;
   --text-secondary: #d1d5db;
   --text-muted: #9ca3af;
   --text-dark: #6b7280;
-  
-  /* Background Colors */
+
   --bg-primary: linear-gradient(135deg, #0c0c1d 0%, #1a1a2e 50%, #16213e 100%);
   --bg-glass: rgba(255, 255, 255, 0.05);
   --bg-glass-hover: rgba(255, 255, 255, 0.1);
   --bg-nav: rgba(0, 0, 0, 0.2);
-  
-  /* Gradients */
+
   --gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
   --gradient-hero: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f59e0b 100%);
   --gradient-tech: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-progress: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);
-  
-  /* Borders */
+
   --border-glass: 1px solid rgba(255, 255, 255, 0.1);
   --border-primary: 2px solid var(--primary-purple);
-  
-  /* Shadows */
-  --shadow-primary: 0 8px 32px rgba(139, 92, 246, 0.3);
-  --shadow-hover: 0 12px 40px rgba(139, 92, 246, 0.4);
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.2);
-  
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
-  --spacing-3xl: 6rem;
-  
-  /* Font Sizes */
+
+  --shadow-primary: 0 6px 24px rgba(139, 92, 246, 0.3);
+  --shadow-hover: 0 10px 32px rgba(139, 92, 246, 0.4);
+  --shadow-card: 0 16px 32px rgba(0, 0, 0, 0.2);
+
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.2rem;
+  --spacing-lg: 1.6rem;
+  --spacing-xl: 2.4rem;
+  --spacing-2xl: 3.2rem;
+  --spacing-3xl: 4.8rem;
+
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-base: 1rem;
@@ -55,34 +47,29 @@
   --font-4xl: 2.5rem;
   --font-5xl: 3rem;
   --font-6xl: 4rem;
-  
-  /* Line Heights */
+
   --line-height-tight: 1.1;
   --line-height-normal: 1.4;
   --line-height-relaxed: 1.6;
   --line-height-loose: 1.8;
-  
-  /* Border Radius */
+
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --radius-xl: 2rem;
   --radius-full: 50%;
-  
-  /* Transitions */
+
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
-  
-  /* Z-index */
+
   --z-cursor: 9999;
   --z-mobile-menu: 999;
   --z-nav: 1000;
   --z-progress: 1001;
   --z-content: 1;
   --z-background: 0;
-  
-  /* Breakpoints */
+
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;

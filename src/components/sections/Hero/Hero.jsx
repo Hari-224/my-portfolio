@@ -4,15 +4,13 @@ import { SiLeetcode } from 'react-icons/si';
 import Typewriter from 'typewriter-effect';
 import Button from '../../ui/Button';
 import { scrollToSection } from '../../../utils/scrollToSection';
-// import { SOCIAL_LINKS } from '../../../data/constants';
 import './Hero.css';
 
-const Hero = () => {
-  const stats = [
-    { icon: <FaCode />, label: '5+ Technologies' },
-    { icon: <FaRocket />, label: '4+ Projects' },
-    { icon: <FaStar />, label: '99% Client Satisfaction' }
-  ];
+const stats = [
+  { icon: <FaCode />, label: '5+ Technologies' },
+  { icon: <FaRocket />, label: '4+ Projects' },
+  { icon: <FaStar />, label: '99% Client Satisfaction' }
+];
 
 const socialLinks = [
   { icon: <FaGithub />, url: 'https://github.com/Hari-224', hoverColor: '#6b7280' },
@@ -20,11 +18,21 @@ const socialLinks = [
   { icon: <SiLeetcode />, url: 'https://leetcode.com/u/Hari-224/', hoverColor: '#f59e0b' }
 ];
 
+const HeroStats = () => (
+  <div className="hero-stats">
+    {stats.map((stat, index) => (
+      <span key={index} className="stat-item hover-lift">
+        {stat.icon}
+        {stat.label}
+      </span>
+    ))}
+  </div>
+);
 
+const Hero = () => {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content fade-in-up">
-        {/* Hero Title with Typewriter */}
         <h1 className="hero-title hero-typewriter">
           <Typewriter
             options={{
@@ -32,27 +40,18 @@ const socialLinks = [
               autoStart: true,
               loop: true,
               delay: 75,
-              deleteSpeed: 50
+              deleteSpeed: 50,
+              pauseFor: 2000,
             }}
           />
         </h1>
 
-        {/* Hero Subtitle */}
         <p className="hero-subtitle">
           Transforming ideas into digital reality
         </p>
 
-        {/* Hero Stats */}
-        <div className="hero-stats">
-          {stats.map((stat, index) => (
-            <span key={index} className="stat-item hover-lift">
-              {stat.icon}
-              {stat.label}
-            </span>
-          ))}
-        </div>
+        <HeroStats />
 
-        {/* Hero Buttons */}
         <div className="hero-buttons">
           <Button
             variant="secondary"
@@ -70,7 +69,6 @@ const socialLinks = [
           </Button>
         </div>
 
-        {/* Social Links */}
         <div className="social-links">
           {socialLinks.map((social, index) => (
             <a

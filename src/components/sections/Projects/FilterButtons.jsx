@@ -1,5 +1,6 @@
+// components/Projects/FilterButtons.jsx
 import React from 'react';
-import Button from '../../ui/Button'; 
+import Button from '../../ui/Button';
 import './FilterButtons.css';
 
 const FilterButtons = ({ filters, activeFilter, onFilterChange }) => {
