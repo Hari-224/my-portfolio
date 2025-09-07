@@ -15,21 +15,22 @@ const About = () => {
         <div className="about-grid">
           <div className="about-content">
             <p className="about-paragraph">
-              I am currently pursuing <strong className="highlight">B.E. Computer Science</strong> at 
-              Sri Krishna College of Technology (SKCT), graduating in 2027. I specialize in building 
-              scalable web and mobile applications that solve real-world problems.
-            </p>
-            
-            <p className="about-paragraph">
-              My expertise includes <strong className="highlight-blue">Full Stack Development</strong>, 
-              <strong className="highlight-green"> Flutter Development</strong>, and <strong className="highlight-yellow">UI/UX Design using Figma</strong>. 
-              I am passionate about creating user-centric, high-performance applications and delivering seamless digital experiences.
-            </p>
+  I am currently pursuing <strong className="highlight">B.E. Computer Science</strong> at 
+  Sri Krishna College of Technology (SKCT), graduating in 2027. I specialize in building 
+  scalable web and mobile applications.
+</p>
 
-            <p className="about-paragraph">
-              I have solved <strong className="highlight-red">200+ coding problems on LeetCode</strong>, honing my problem-solving and algorithmic skills. 
-              I enjoy tackling challenges, optimizing solutions, and writing clean, maintainable code.
-            </p>
+<p className="about-paragraph">
+  My expertise spans <strong className="highlight-blue">Full Stack Development</strong>, 
+  <strong className="highlight-green"> Flutter Development</strong>, and <strong className="highlight-yellow">UI/UX Design with Figma</strong>. 
+  I create user-focused, high-performance applications.
+</p>
+
+<p className="about-paragraph">
+  I have solved <strong className="highlight-red">200+ coding problems on LeetCode</strong> 
+  and work as a freelance developer, delivering projects for clients with clean, efficient solutions.
+</p>
+
             
             <div className="about-actions">
               <Button

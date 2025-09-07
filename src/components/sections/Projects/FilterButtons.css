@@ -1,46 +1,42 @@
 .filter-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: center; /* center align buttons */
+  gap: 1rem;               /* spacing between buttons */
   margin-bottom: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap;          /* allow buttons to wrap on smaller screens */
 }
 
 .filter-button {
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
-  border: 2px solid transparent;
   font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
-  background: #1f2937;
-  color: #ffffff;
   min-width: 100px;
   text-align: center;
-  transition: all 0.3s ease;
+  border: 2px solid #8b5cf6;
+  background: transparent;
+  color: #8b5cf6;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .filter-button:hover,
-.filter-button:focus {
-  border: 2px solid #8b5cf6;
-  background: #1f2937;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
-
+.filter-button:focus,
 .filter-button.active {
-  border: 2px solid #8b5cf6;
-  background: #1f2937;
-  color: #ffffff;
-}
-
-.filter-button.active:hover {
-  transform: translateY(-2px);
+  color: #ffffff; /* Only text color changes to white */
+  background: transparent; /* Keep background transparent */
+  border: 2px solid #8b5cf6; /* Keep border violet */
 }
 
 @media (max-width: 768px) {
+  .filter-buttons {
+    justify-content: center; /* center buttons on small screens */
+    gap: 0.8rem;             /* slightly smaller gap for mobile */
+  }
+  
   .filter-button {
-    padding: 0.6rem 1.2rem;
-    min-width: 80px;
-    font-size: 0.9rem;
+    padding: 0.6rem 1rem;    /* smaller padding for mobile */
+    min-width: 90px;          /* smaller width for mobile */
+    font-size: 0.9rem;        /* smaller font size */
   }
 }

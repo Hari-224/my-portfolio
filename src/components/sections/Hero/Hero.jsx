@@ -7,7 +7,7 @@ import { scrollToSection } from '../../../utils/scrollToSection';
 import './Hero.css';
 
 const stats = [
-  { icon: <FaCode />, label: '5+ Technologies' },
+  { icon: <FaCode />, label: '9+ Technologies' },
   { icon: <FaRocket />, label: '4+ Projects' },
   { icon: <FaStar />, label: '99% Client Satisfaction' }
 ];
@@ -36,7 +36,7 @@ const Hero = () => {
         <h1 className="hero-title hero-typewriter">
           <Typewriter
             options={{
-              strings: ['Full Stack Developer', 'React Enthusiast', 'Problem Solver'],
+              strings: ['Full Stack Developer', 'Problem Solver'],
               autoStart: true,
               loop: true,
               delay: 75,

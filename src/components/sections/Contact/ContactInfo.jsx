@@ -17,7 +17,7 @@ const ContactInfo = () => {
       <div className="contact-intro">
         <h3 className="contact-info-title">Get In Touch</h3>
         <p className="contact-info-description">
-          🚀 Always open to exciting projects & collaborations. Let’s make something unforgettable.
+       🚀 Turning ideas into impact - let’s build solutions that last.
         </p>
       </div>
 

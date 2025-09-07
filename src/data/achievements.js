@@ -12,13 +12,13 @@ export const achievements = [
   {
     icon: <FaRocket />,
     title: '4+ Projects',
-    description: 'Successfully developed and deployed 3+ production-ready web and mobile applications.'
+    description: 'Successfully developed 4+ production-ready web and mobile applications.'
   },
   
   {
     icon: <FaBrain />,
     title: 'SIH 2023 Semi-Finalist',
-    description: 'Selected as a semi-finalist in Smart India Hackathon 2023; worked on AI/ML projects and gained hands-on experience with TensorFlow.'
+    description: 'Smart multilingual museum chatbot enabling all visitors to navigate exhibits and book tickets seamlessly.'
   },
   {
     icon: <FaAward />,

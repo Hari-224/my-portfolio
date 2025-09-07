@@ -3,57 +3,36 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
+  const socialLinks = [
+    { icon: <FaEnvelope />, link: "mailto:akhariakhari7@gmail.com", label: "Email" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/hariprasath-a-ba72a3299/", label: "LinkedIn" },
+    { icon: <FaGithub />, link: "https://github.com/Hari-224", label: "GitHub" },
+    { icon: <FaCode />, link: "https://leetcode.com/u/Hari-224/", label: "LeetCode" },
+  ];
+
   return (
     <footer className="footer">
-      {/* Divider Line */}
       <div className="footer-divider"></div>
 
-      {/* Social Links */}
       <div className="footer-socials">
-        <a
-          href="mailto:akhariakhari7@gmail.com"
-          aria-label="Email"
-          className="footer-icon"
-        >
-          <FaEnvelope />
-        </a>
-        <a
-          href="https://linkedin.com/in/your-linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="footer-icon"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/your-github"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-          className="footer-icon"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://leetcode.com/u/Hari-224/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LeetCode"
-          className="footer-icon"
-        >
-          <FaCode />
-        </a>
+        {socialLinks.map((social, index) => (
+          <a
+            key={index}
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.label}
+            className="footer-icon"
+          >
+            {social.icon}
+          </a>
+        ))}
       </div>
 
-      {/* Bottom Info */}
       <div className="footer-bottom">
         <p className="footer-text">
-          © {new Date().getFullYear()} Hari — All Rights Reserved
+          © {new Date().getFullYear()} Hariprasath A — Building Digital Dreams
         </p>
-        {/* <p className="footer-credit">
-          Built with <span className="highlight">React</span> ⚡
-        </p> */}
       </div>
     </footer>
   );

@@ -66,29 +66,34 @@ input::placeholder {
   color: rgba(255,255,255,0.6);
 }
 
-.next-btn, .launch-btn {
-  padding: 0.8rem 2rem;
+.next-btn,
+.launch-btn {
+  padding: 0.8rem 1.6rem;
   border-radius: 2rem;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  background: #1f2937;
-  color: #fff;
-  border: 2px solid transparent;
+  background: transparent;      /* transparent background */
+  border: 2px solid #8b5cf6;   /* violet border */
+  color: #8b5cf6;              /* violet text */
   transition: all 0.3s ease;
   min-width: 140px;
   text-align: center;
   align-self: center;
 }
 
-.next-btn:hover, .launch-btn:hover,
-.next-btn:focus, .launch-btn:focus,
-.next-btn:active, .launch-btn:active {
-  border: 2px solid #8b5cf6;
-  background: #1f2937;
-  color: #fff;
+.next-btn:hover,
+.launch-btn:hover,
+.next-btn:focus,
+.launch-btn:focus,
+.next-btn:active,
+.launch-btn:active {
+  color: #ffffff;               /* text turns white on hover/click */
+  background: transparent;      /* keep background transparent */
+  border: 2px solid #8b5cf6;   /* violet border stays */
   transform: translateY(-2px);
 }
+
 
 .project-type-buttons {
   display: flex;

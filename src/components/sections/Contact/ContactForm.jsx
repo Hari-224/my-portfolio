@@ -52,12 +52,12 @@ const ContactForm = () => {
 
   const showPopup = (msg) => {
     setPopupMessage(msg);
-    setTimeout(() => setPopupMessage(''), 8000);
+    setTimeout(() => setPopupMessage(''), 2000);
   };
 
   const handleLaunch = () => {
-    if (formData.details.trim().length < 20) {
-      showPopup('Please enter at least 20 characters in the project details!');
+    if (formData.details.trim().length < 10) {
+      showPopup('Please enter at least 10 characters in the project details!');
       return;
     }
 
