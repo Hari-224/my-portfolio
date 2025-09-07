@@ -58,8 +58,9 @@ input, .form-textarea {
 
 input:focus, .form-textarea:focus {
   outline: none;
-  border-color: #8b5cf6;
+  border: 2px solid #8b5cf6;
 }
+
 
 .form-textarea::placeholder,
 input::placeholder {
@@ -73,9 +74,9 @@ input::placeholder {
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  background: transparent;      /* transparent background */
-  border: 2px solid #8b5cf6;   /* violet border */
-  color: #8b5cf6;              /* violet text */
+  background: transparent;
+  border: 2px solid #8b5cf6;
+  color: #8b5cf6;
   transition: all 0.3s ease;
   min-width: 140px;
   text-align: center;
@@ -88,12 +89,11 @@ input::placeholder {
 .launch-btn:focus,
 .next-btn:active,
 .launch-btn:active {
-  color: #ffffff;               /* text turns white on hover/click */
-  background: transparent;      /* keep background transparent */
-  border: 2px solid #8b5cf6;   /* violet border stays */
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #8b5cf6;
   transform: translateY(-2px);
 }
-
 
 .project-type-buttons {
   display: flex;
@@ -131,13 +131,44 @@ input::placeholder {
   color: #10b981;
   margin-top: 1rem;
 }
-
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .contact-form-container {
     padding: 2rem 1.5rem;
   }
 
+  .contact-form-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  input, .form-textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  /* Reduce Next button width horizontally */
   .next-btn, .launch-btn {
-    width: 100%;
+    width: auto;          /* do not take full width */
+    padding: 0.55rem 1rem; /* smaller padding */
+    font-size: 0.9rem;
+    min-width: 120px;      /* optional: minimum width */
+    max-width: 160px;      /* optional: maximum width */
+    align-self: center;
+  }
+
+  .project-type-buttons {
+    gap: 0.7rem;
+  }
+
+  .project-type-buttons button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.875rem;
+  }
+
+  .popup-message {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    top: -50px;
   }
 }
