@@ -1,3 +1,4 @@
+// components/Navigation/Navigation.jsx
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { scrollToSection } from '../../../utils/scrollToSection';

@@ -7,8 +7,8 @@ import { scrollToSection } from '../../../utils/scrollToSection';
 import './Hero.css';
 
 const stats = [
-  { icon: <FaCode />, label: '9+ Technologies' },
-  { icon: <FaRocket />, label: '4+ Projects' },
+  { icon: <FaCode />, label: '14+ Technologies' },
+  { icon: <FaRocket />, label: '7+ Projects' },
   { icon: <FaStar />, label: '99% Client Satisfaction' }
 ];
 

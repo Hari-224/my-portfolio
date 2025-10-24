@@ -126,6 +126,107 @@
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
+.internship-badge {
+  display: inline-block;
+  background-color: #e5e7eb; /* light gray */
+  color: #111827; /* dark neutral text */
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  border: 1px solid #d1d5db; /* subtle border */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.internship-badge:hover {
+  background-color: #d1d5db;
+  color: #000;
+}
+
+
+/* Limit description & impact neatly on mobile */
+@media (max-width: 768px) {
+  
+
+/* Features & Tech horizontal scroll without scrollbar */
+.feature-tags,
+.tech-tags {
+  display: flex;
+  overflow-x: auto;      /* keep scrollable on small screens */
+  gap: 8px;
+  padding-bottom: 4px;
+
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.feature-tags::-webkit-scrollbar,
+.tech-tags::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description,
+  .impact-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Highlight banner for internship */
+/* Simple Internship Highlight Banner */
+.highlight-banner {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-left: 4px solid #4f46e5; /* subtle professional accent */
+  border-radius: 6px;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.highlight-banner:hover {
+  background-color: #e5e7eb; /* light hover feedback */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .highlight-banner {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

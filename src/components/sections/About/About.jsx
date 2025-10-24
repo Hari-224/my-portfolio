@@ -11,27 +11,33 @@ const About = () => {
     <section id="about" className="section">
       <div className="container">
         <h2 className="section-title">About Me</h2>
-        
+
         <div className="about-grid">
           <div className="about-content">
-            <p className="about-paragraph">
-  I am currently pursuing <strong className="highlight">B.E. Computer Science</strong> at 
-  Sri Krishna College of Technology (SKCT), graduating in 2027. I specialize in building 
-  scalable web and mobile applications.
-</p>
-
-<p className="about-paragraph">
-  My expertise spans <strong className="highlight-blue">Full Stack Development</strong>, 
-  <strong className="highlight-green"> Flutter Development</strong>, and <strong className="highlight-yellow">UI/UX Design with Figma</strong>. 
-  I create user-focused, high-performance applications.
-</p>
-
-<p className="about-paragraph">
-  I have solved <strong className="highlight-red">200+ coding problems on LeetCode</strong> 
-  and work as a freelance developer, delivering projects for clients with clean, efficient solutions.
-</p>
-
             
+            <p className="about-paragraph">
+              I'm a dedicated <strong className="highlight">Computer Science Engineering</strong> student
+              at Sri Krishna College of Technology, graduating in 2027. My passion lies in transforming
+              real-world problems into <strong className="highlight-green">efficient digital solutions </strong> 
+              through clean, scalable engineering.
+            </p>
+
+            <p className="about-paragraph">
+              I focus on building high-performance
+              <strong className="highlight-blue"> web</strong> and
+              <strong className="highlight-green"> mobile applications</strong> using 
+              modern technologies such as <strong className="highlight-blue">React, Flutter, and Spring Boot </strong>
+              backed by robust <strong className="highlight-green">MySQL</strong> databases.
+              I also design intuitive user experiences with 
+              <strong className="highlight-yellow"> Figma</strong>.
+            </p>
+
+            <p className="about-paragraph">
+  I build reliable, production-ready software with clean, maintainable code and intuitive UI/UX. Driven by curiosity and creativity, I thrive in collaborative, high-performing teams, focusing on delivering products that create measurable value and exceptional user experiences.
+</p>
+
+
+
             <div className="about-actions">
               <Button
                 variant="secondary"
@@ -41,7 +47,7 @@ const About = () => {
               >
                 Download Resume
               </Button>
-              
+
               <Button
                 variant="secondary"
                 icon={<FaEnvelope />}
@@ -51,10 +57,9 @@ const About = () => {
                 Contact Me
               </Button>
             </div>
-          </div>  
+          </div>
 
           <div className="achievements-section">
-            {/* <h3 className="achievements-title">Achievements & Milestones</h3> */}
             <div className="achievements-grid">
               {achievements.map((achievement, index) => (
                 <AchievementCard
@@ -66,6 +71,7 @@ const About = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>

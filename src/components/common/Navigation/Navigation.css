@@ -95,37 +95,76 @@
   z-index: 10000;
 }
 
+/* Mobile menu links styled like your tabs */
 .mobile-nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem; /* spacing between options */
   text-align: center;
+  width: 100%;
+  max-width: 400px; /* optional, keep buttons aligned */
+  margin: 0 auto;
 }
 
 .mobile-nav .nav-link {
   font-size: 1.2rem;
-  padding: 0.8rem 1.2rem;
-  width: 100%;
-  border-radius: var(--radius-md);
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;       /* rounded pill shape */
+  width: 100%;                 /* full width */
+  background: rgba(255, 255, 255, 0.05); /* subtle glass */
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid transparent; 
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .mobile-nav .nav-link:hover,
 .mobile-nav .nav-link.active {
-  background: rgba(255, 255, 255, 0.08);
+  background: #8b5cf6; /* violet background */
   color: #fff;
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+/* Mobile-specific button style */
 @media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 0;
   }
-  .mobile-menu-button {
-    display: block;
+
+  .mobile-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;      /* pill-style padding */
+    border-radius: 2rem;         /* round edges */
+    border: 2px solid #8b5cf6;   /* violet border */
+    background: rgba(255, 255, 255, 0.05); /* slight transparent background */
+    color: #8b5cf6;
+    font-weight: 600;
+    width: fit-content;           /* shrink to text */
+    margin: 0 auto;               /* center in menu */
+    transition: all 0.3s ease;
+  }
+
+  .mobile-nav .nav-link:hover,
+  .mobile-nav .nav-link.active {
+    background: #8b5cf6;          /* violet background on hover/active */
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* Ensure close button stays on top */
+  .close-menu-button {
+    z-index: 10000;
   }
 }
