@@ -1,10 +1,8 @@
-/* Section container */
 .section {
   padding: 6rem 2rem;
   text-align: center;
 }
 
-/* Section title with gradient text */
 .section-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
@@ -14,14 +12,12 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Section subtitle */
 .section-subtitle {
   font-size: 1.5rem;
   color: #cbd5e1;
   margin-bottom: 3rem;
 }
 
-/* Projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -29,7 +25,6 @@
   margin-top: 2rem;
 }
 
-/* Project card container */
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -40,13 +35,11 @@
   flex-direction: column;
 }
 
-/* Lift effect on hover */
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Project image */
 .project-card img {
   width: 100%;
   height: 200px;
@@ -54,7 +47,6 @@
   display: block;
 }
 
-/* Project content */
 .project-content {
   padding: 1.5rem;
   flex-grow: 1;
@@ -82,32 +74,27 @@
   color: #cbd5e1;
   margin-bottom: 1rem;
 }
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;  /* center align */
-  margin-top: 10px;
+
+.project-section {
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.tech-tag {
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent pill */
-  color: #d9dfe1;  /* soft cyan text (contrasts with dark bg) */
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+.project-section-title {
+  font-size: 1rem;
   font-weight: 600;
-  white-space: nowrap;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
-/* Subtle hover effect */
-.tech-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+.feature-text,
+.tech-text,
+.impact-text {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-/* Project action buttons */
 .project-actions {
   display: flex;
   gap: 0.5rem;
@@ -126,16 +113,17 @@
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
+
 .internship-badge {
   display: inline-block;
-  background-color: #e5e7eb; /* light gray */
-  color: #111827; /* dark neutral text */
+  background-color: #e5e7eb;
+  color: #111827;
   font-weight: 600;
   font-size: 0.8rem;
   padding: 4px 10px;
   border-radius: 20px;
   margin-left: 10px;
-  border: 1px solid #d1d5db; /* subtle border */
+  border: 1px solid #d1d5db;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -144,54 +132,13 @@
   color: #000;
 }
 
-
-/* Limit description & impact neatly on mobile */
-@media (max-width: 768px) {
-  
-
-/* Features & Tech horizontal scroll without scrollbar */
-.feature-tags,
-.tech-tags {
-  display: flex;
-  overflow-x: auto;      /* keep scrollable on small screens */
-  gap: 8px;
-  padding-bottom: 4px;
-
-  /* Hide scrollbar for all browsers */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-
-.feature-tags::-webkit-scrollbar,
-.tech-tags::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-
-  .project-content {
-    padding: 1rem;
-  }
-
-  .project-title {
-    font-size: 1.3rem;
-  }
-
-  .project-description,
-  .impact-text {
-    font-size: 0.9rem;
-  }
-}
-
-
-/* Highlight banner for internship */
-/* Simple Internship Highlight Banner */
 .highlight-banner {
   background-color: #f4f4f4;
   color: #333;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 1.2rem;
-  border-left: 4px solid #4f46e5; /* subtle professional accent */
+  border-left: 4px solid #4f46e5;
   border-radius: 6px;
   margin-bottom: 1.8rem;
   cursor: pointer;
@@ -200,35 +147,9 @@
 }
 
 .highlight-banner:hover {
-  background-color: #e5e7eb; /* light hover feedback */
+  background-color: #e5e7eb;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive tweak */
-@media (max-width: 768px) {
-  .highlight-banner {
-    font-size: 0.9rem;
-    padding: 0.8rem 1rem;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
-}
-
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -240,5 +161,25 @@
 
   .section-title {
     font-size: 2.5rem;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description,
+  .feature-text,
+  .tech-text,
+  .impact-text {
+    font-size: 0.9rem;
+  }
+
+  .highlight-banner {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
   }
 }
