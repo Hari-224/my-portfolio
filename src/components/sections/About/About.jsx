@@ -33,20 +33,22 @@ const About = () => {
             </p>
 
             <p className="about-paragraph">
-  I build reliable, production-ready software with clean, maintainable code and intuitive UI/UX. Driven by curiosity and creativity, I thrive in collaborative, high-performing teams, focusing on delivering products that create measurable value and exceptional user experiences.
+  I build reliable, production-ready software with clean, maintainable code and intuitive UI. Driven by curiosity and creativity, I thrive in collaborative, high-performing teams, focusing on delivering products that create measurable value and exceptional user experiences.
 </p>
 
 
 
             <div className="about-actions">
-              <Button
-                variant="secondary"
-                icon={<FaDownload />}
-                onClick={() => window.open('/Hariprasath_A_resume.pdf', '_blank')}
-                className="no-hover"
-              >
-                Download Resume
-              </Button>
+              <a href="/Hariprasath_resume_dot.pdf" target="_blank" rel="noopener noreferrer" download>
+  <Button
+    variant="secondary"
+    icon={<FaDownload />}
+    className="no-hover"
+  >
+    Download Resume
+  </Button>
+</a>
+
 
               <Button
                 variant="secondary"
