@@ -14,7 +14,7 @@ export const skillCategories = [
       { name: "HTML5", icon: <FaHtml5 />, level: 80 },
       { name: "CSS3", icon: <FaCss3Alt />, level: 75 },
       { name: "JavaScript", icon: <SiJavascript />, level: 80 },
-      { name: "UI/UX Design (Figma)", icon: <FaFigma />, level: 65 }
+      { name: "UI Design (Figma)", icon: <FaFigma />, level: 65 }
     ]
   },
   {
@@ -23,8 +23,7 @@ export const skillCategories = [
     skills: [
       { name: "Spring Boot", icon: <SiSpringboot />, level: 85 },
       { name: "Java", icon: <FaJava />, level: 90 },
-      { name: "MySQL", icon: <SiMysql />, level: 80 },
-      { name: "REST API", icon: <SiPostman />, level: 75 }
+      { name: "MySQL", icon: <SiMysql />, level: 80 }
     ]
   },
   {
