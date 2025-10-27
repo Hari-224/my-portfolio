@@ -39,7 +39,7 @@ const About = () => {
 
 
             <div className="about-actions">
-              <a href="/Hariprasath_resume_dot.pdf" target="_blank" rel="noopener noreferrer" download>
+              <a href="/resume1.pdf" target="_blank" rel="noopener noreferrer" download>
   <Button
     variant="secondary"
     icon={<FaDownload />}
