@@ -28,7 +28,7 @@ const About = () => {
               <strong className="highlight-green"> mobile applications</strong> using 
               modern technologies such as <strong className="highlight-blue">React, Flutter, and Spring Boot </strong>
               backed by robust <strong className="highlight-green">MySQL</strong> databases.
-              I also design intuitive user experiences with 
+              I also design intuitive user interfaces with 
               <strong className="highlight-yellow"> Figma</strong>.
             </p>
 
@@ -42,7 +42,7 @@ const About = () => {
               <Button
                 variant="secondary"
                 icon={<FaDownload />}
-                onClick={() => window.open('/Hariprasath_resume_dot.pdf', '_blank')}
+                onClick={() => window.open('/Hariprasath_A_resume.pdf', '_blank')}
                 className="no-hover"
               >
                 Download Resume

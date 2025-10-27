@@ -6,13 +6,13 @@ export const achievements = [
   {
     icon: <SiLeetcode />,
     title: '250+ Problems Solved',
-    description: 'Solved over 200 coding problems on LeetCode, enhancing problem-solving, algorithms, and data structures skills.'
+    description: 'Solved over 250+ coding problems on LeetCode, enhancing problem-solving, algorithms, and data structures skills.'
   },
   
   {
     icon: <FaRocket />,
     title: '7+ Projects',
-    description: 'Successfully developed 4+ production-ready web and mobile applications.'
+    description: 'Successfully developed 7+ production-ready web and mobile applications.'
   },
   
   {
