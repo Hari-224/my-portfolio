@@ -1,26 +1,23 @@
  /* components/common/CustomCursor/CustomCursor.css */
-/* Normal custom cursor with subtle styling */
+
 .custom-cursor {
   position: fixed;
   width: 10px;
   height: 10px;
-  background: #ffffff; /* simple white dot */
+  background: #ffffff; 
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: width 0.1s ease, height 0.1s ease, transform 0.05s ease;
 }
-
-/* Optional: slightly larger cursor when hovering clickable elements */
 a:hover ~ .custom-cursor,
 button:hover ~ .custom-cursor {
   width: 14px;
   height: 14px;
-  background: #8b5cf6; /* gradient color hover */
+  background: #8b5cf6; 
 }
 
-/* Hide cursor on small screens */
 @media (max-width: 768px) {
   .custom-cursor {
     display: none;
